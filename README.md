@@ -26,16 +26,11 @@ Sequence-to-sequence learning (Seq2Seq) is about training models to convert sequ
     *	Feed the state vectors and 1-char target sequence to the decoder to produce predictions for the next character
     * Sample the next character using these predictions (we simply use argmax).
     * Append the sampled character to the target sequence
-    * Repeat until we generate the end-of-sequence character or we hit the character limit.
-	
-For more information, please check these papers:
-
-	* [Sequence to Sequence Learning with Neural Networks](https://arxiv.org/abs/1409.3215)
-    * [Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation](https://arxiv.org/abs/1406.1078)
+    * Repeat until we generate the end-of-sequence character or we hit the character limit
 
 ## How to use it
 
-1. Downlow you training dataset
+1. Download  training dataset
 2. Update path and the number of training example
 3. Run ```python3 training.py ```	
 4. Prediction with ```python3 predictionTranslation.py```
